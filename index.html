@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pavle Orlović - personal web presentation">
+    <title>Pavle Orlović</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- the menu: the same on every page; on a narrow screen it folds into a button -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Pavle Orlović</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">About me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experience.html">Experience &amp; skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- the welcome area -->
+    <header class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="images/pavle.png" alt="Photo of Pavle Orlović" class="photo rounded-circle shadow">
+                </div>
+                <div class="col-md-8">
+                    <h1 class="display-4">Hi, I'm Pavle</h1>
+                    <p class="lead">
+                        Information Technology engineer, master student of Business Informatics,
+                        and a sales and client relations professional.
+                    </p>
+                    <a href="experience.html" class="btn btn-light mr-2 mb-2">What I do</a>
+                    <a href="contact.html" class="btn btn-outline-light mb-2">Get in touch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-lg-7 mb-4">
+                <h2>About me</h2>
+                <p>
+                    I was born in <strong>Toronto, Canada</strong>, in 2002, so English is my native language.
+                    In 2009 my family moved to <strong>Novi Sad, Serbia</strong>, and in 2015 to <strong>Belgrade</strong>,
+                    where I live today.
+                </p>
+                <p>
+                    I finished the Electrical Engineering High School in Zemun as an administrator of computer networks,
+                    and graduated as an <strong>Engineer of Information Technologies</strong> in 2025.
+                    Now I am a master student of <strong>Business Informatics</strong> at the Faculty of Economics,
+                    University of Belgrade.
+                </p>
+                <p>
+                    Besides technology, I like working with people: I work in sales and client relations,
+                    where I connect what clients need with what developers build.
+                    I am a fast learner, I adapt easily, and I enjoy working in a team.
+                </p>
+            </div>
+
+            <!-- a few facts, as Bootstrap cards -->
+            <div class="col-lg-5">
+                <div class="card mb-3 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">In short</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>&#127979; Engineer of Information Technologies</li>
+                            <li>&#128218; Master student, Business Informatics</li>
+                            <li>&#128188; Sales &amp; client relations</li>
+                            <li>&#127809; Born in Canada, living in Belgrade</li>
+                            <li>&#128483; English (C2), German (B1), Serbian</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Strengths</h5>
+                        <span class="badge badge-pill badge-info p-2 mb-1">Communication</span>
+                        <span class="badge badge-pill badge-info p-2 mb-1">Teamwork</span>
+                        <span class="badge badge-pill badge-info p-2 mb-1">Organisation</span>
+                        <span class="badge badge-pill badge-info p-2 mb-1">Fast learner</span>
+                        <span class="badge badge-pill badge-info p-2 mb-1">Adaptable</span>
+                        <span class="badge badge-pill badge-info p-2 mb-1">Goal-driven</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container text-center text-muted">
+            &copy; 2026 Pavle Orlović &middot; made with HTML, CSS and Bootstrap &middot; published with GitHub Pages
+        </div>
+    </footer>
+
+    <!-- Bootstrap needs jQuery and Popper for the menu that folds on narrow screens -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

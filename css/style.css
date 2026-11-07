@@ -1,0 +1,77 @@
+/* My own styles - Bootstrap does most of the work, these are only additions */
+
+:root {
+    --accent: #1f6f8b;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    color: #333;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--accent);
+}
+
+/* the menu: the link of the page that is shown is underlined */
+.navbar .nav-link.active {
+    border-bottom: 2px solid #fff;
+}
+
+/* the big welcome area on the home page */
+.hero {
+    background: linear-gradient(135deg, #1f6f8b 0%, #99a8b2 100%);
+    color: #fff;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #fff;
+}
+
+/* the timeline on the pages Education and Experience */
+.timeline {
+    border-left: 3px solid var(--accent);
+    padding-left: 1.5rem;
+    margin-left: .5rem;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+/* the dot on the line, in front of every item */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -2.05rem;
+    top: .35rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid var(--accent);
+}
+
+.timeline-item .years {
+    font-weight: bold;
+    color: var(--accent);
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    font-size: .9rem;
+}

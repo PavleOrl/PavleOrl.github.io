@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - Pavle Orlović</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Pavle Orlović</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">About me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experience.html">Experience &amp; skills</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <h1 class="mb-4">Contact</h1>
+
+        <div class="row">
+            <div class="col-md-5 mb-4">
+                <p>I am happy to hear about projects, jobs and ideas. The easiest way to reach me is by e-mail.</p>
+                <p>
+                    <strong>E-mail:</strong>
+                    <a href="mailto:pavle.orl@gmail.com">pavle.orl@gmail.com</a>
+                </p>
+                <p><strong>City:</strong> Belgrade, Serbia</p>
+            </div>
+
+            <!--
+                A form that opens the e-mail program of the visitor (action="mailto:...").
+                A static site on GitHub Pages has no server of its own that could receive the form.
+            -->
+            <div class="col-md-7">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Send me a message</h5>
+                        <form action="mailto:pavle.orl@gmail.com" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="name">Your name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container text-center text-muted">
+            &copy; 2026 Pavle Orlović &middot; made with HTML, CSS and Bootstrap &middot; published with GitHub Pages
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
